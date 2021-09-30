@@ -32,7 +32,7 @@
 void Rlasrt(const char *id, INTEGER const n, REAL *d, INTEGER &info) {
     INTEGER dir = 0;
     INTEGER stkpnt = 0;
-    INTEGER stacklen = 32;
+    const INTEGER stacklen = 32;
     INTEGER stack[2 * stacklen];
     INTEGER ldstack = 2;
     INTEGER start = 0;

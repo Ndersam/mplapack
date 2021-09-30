@@ -28,6 +28,7 @@
 
 #include <mpblas.h>
 #include <mplapack.h>
+#define max(a,b) (((a)>(b))?(a):(b))
 
 void Rla_gbamv(INTEGER const trans, INTEGER const m, INTEGER const n, INTEGER const kl, INTEGER const ku, REAL const alpha, REAL *ab, INTEGER const ldab, REAL *x, INTEGER const incx, REAL const beta, REAL *y, INTEGER const incy) {
     //

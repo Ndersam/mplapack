@@ -28,6 +28,7 @@
 
 #include <mpblas.h>
 #include <mplapack.h>
+#define max(a,b) (((a)>(b))?(a):(b))
 
 REAL Rla_gbrcond(const char *trans, INTEGER const n, INTEGER const kl, INTEGER const ku, REAL *ab, INTEGER const ldab, REAL *afb, INTEGER const ldafb, INTEGER *ipiv, INTEGER const cmode, REAL *c, INTEGER &info, REAL *work, INTEGER *iwork) {
     REAL return_value = 0.0;
